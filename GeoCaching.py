@@ -29,7 +29,7 @@ def gpx_cleaner(filename, HTML = None):
     gpx_content = re.sub(r"<wpt[^>]*>(?:(?!<groundspeak:cache).)*?</wpt>", "", gpx_content, flags=re.DOTALL)
     gpx_content = re.sub(r"^\s*$\n", "", gpx_content, flags=re.MULTILINE)
 
-    print("-", gpx_content.count("<wpt lat"), "Caches")
+    print("-", gpx_content.count("<wpt lat"), "GeoCaches")
     #print(gpx_content)
 
     #print(f"- lösche {filename}") # lösche unbereinigte datei
